@@ -23,16 +23,18 @@ class ModifyBitAtPosition
         if (bitValue == 1)
         {
             int setOne = 1 << bitPosition;
-            int foundBitOne = number | setOne;
-            Console.WriteLine("Result number -> " + foundBitOne);
-            Console.WriteLine("Binary result -> " + Convert.ToString(foundBitOne, 2).PadLeft(16, '0'));
+            int modifyBitOne = number | setOne;
+            Console.WriteLine();
+            Console.WriteLine("Result number -> " + modifyBitOne);
+            Console.WriteLine("Binary result -> " + Convert.ToString(modifyBitOne, 2).PadLeft(16, '0'));
         }
         else
         {
             int setZero = ~(1 << bitPosition);
-            int foundBitZero = number & setZero;
-            Console.WriteLine("Result number -> " + foundBitZero);
-            Console.WriteLine("Binary result -> " + Convert.ToString(foundBitZero, 2).PadLeft(16, '0'));
+            int modifyBitZero = number & setZero;
+            Console.WriteLine();
+            Console.WriteLine("Result number -> " + modifyBitZero);
+            Console.WriteLine("Binary result -> " + Convert.ToString(modifyBitZero, 2).PadLeft(16, '0'));
         }
     }
 }

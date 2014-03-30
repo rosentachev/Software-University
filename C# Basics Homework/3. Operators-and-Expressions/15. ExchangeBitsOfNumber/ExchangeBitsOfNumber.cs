@@ -33,6 +33,6 @@ class ExchangeBitsOfNumber
 
         Console.WriteLine("The binary representation of number {0} is:  {1}", unInt, Convert.ToString(unInt, 2).PadLeft(32, '0'));
         Console.WriteLine("Result number is: " + result);
-        Console.WriteLine("The binary representaion of modified {0} is: {1}", unInt, Convert.ToString(result, 2).PadLeft(32, '0'));
+        Console.WriteLine("The binary representaion after exchange of {0} is: {1}", unInt, Convert.ToString(result, 2).PadLeft(32, '0'));
     }
 }
